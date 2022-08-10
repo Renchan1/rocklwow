@@ -22,7 +22,7 @@ end)
 end)
 ---
 Preview:CreateLabel("AutoEquip")
-Preview:CreateToggle("Auto Sickle Awken (Recommend) ", function(a)
+Preview:CreateToggle("Auto Sickle Awken Recommend ", function(a)
 AutoEquiped = a
 end)
 spawn(function()
@@ -131,16 +131,16 @@ end)
 Preview:CreateToggle("Florentino Boss", function(a)
 _G.AutoLV = a
 
-Method = CFrame.new(0,6,5)
+Method = CFrame.new(0,6,6)
 
 spawn(function()
    while wait(3) do
        if Methodnow == 1 then
         Methodnow = 2
-        Method = CFrame.new(0,6,5)
+        Method = CFrame.new(0,6,6)
         else
         Methodnow = 1
-        Method = CFrame.new(0,6,5)
+        Method = CFrame.new(0,6,6)
        end
     end
 end)
