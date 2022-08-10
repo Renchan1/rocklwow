@@ -23,40 +23,12 @@ end)
 ---
 Preview:CreateLabel("AutoEquip")
 Preview:CreateToggle("Auto Sickle Awken (Recommend) ", function(a)
-AutoEquiped = a
+AutoEquipe = a
 end)
 spawn(function()
 Weapon = "Sickle Awken"
 while wait() do
-if AutoEquiped then
-pcall(function()
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
-end)
-end
-end
-end)
---------------
-Preview:CreateToggle("Auto Katana", function(aa)
-AutoEquipedk = aa
-end)
-spawn(function()
-Weapon = "Katana"
-while wait() do
-if AutoEquipedk then
-pcall(function()
-game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
-end)
-end
-end
-end)
----------------
-Preview:CreateToggle("Auto Saber", function(aaa)
-AutoEquipeds = aaa
-end)
-spawn(function()
-Weapon = "Saber"
-while wait() do
-if AutoEquipeds then
+if AutoEquipe then
 pcall(function()
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
 end)
