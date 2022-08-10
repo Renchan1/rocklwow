@@ -43,6 +43,19 @@ Preview:CreateToggle("Shanks Boss", function(a)
 
 _G.AutoLV = a
  
+Method = CFrame.new(0,8,6)
+ 
+spawn(function()
+   while wait(3) do
+       if Methodnow == 1 then
+        Methodnow = 2
+        Method = CFrame.new(0,8,6)
+        else
+        Methodnow = 1
+        Method = CFrame.new(0,8,6)
+       end
+    end
+end)
     spawn(function()
        game:GetService("RunService").RenderStepped:Connect(function()
         pcall(function()
@@ -51,7 +64,7 @@ _G.AutoLV = a
 local players = game:GetService("Players")
 local plr = players.LocalPlayer
 local tween = game:GetService("TweenService")
-local CFrameEnd = game:GetService("Workspace").Shanks.HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local CFrameEnd = game:GetService("Workspace").Shanks.HumanoidRootPart.CFrame * Method
 local Time = 0.7
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
@@ -86,6 +99,19 @@ end)
 ---------------------------------------------------------------------------
 Preview:CreateToggle("Florentino Boss", function(a)
 _G.AutoLV = a
+
+spawn(function()
+   while wait(3) do
+       if Methodnow == 1 then
+        Methodnow = 2
+        Method = CFrame.new(0,8,6)
+        else
+        Methodnow = 1
+        Method = CFrame.new(0,8,6)
+       end
+    end
+end)
+
  
     spawn(function()
        game:GetService("RunService").RenderStepped:Connect(function()
@@ -94,7 +120,7 @@ _G.AutoLV = a
 local players = game:GetService("Players")
 local plr = players.LocalPlayer
 local tween = game:GetService("TweenService")
-local CFrameEnd = game:GetService("Workspace")["florentino Boss"].HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local CFrameEnd = game:GetService("Workspace")["florentino Boss"].HumanoidRootPart.CFrame * Method
 local Time = 0.7
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
@@ -130,6 +156,17 @@ end)
 Preview:CreateToggle("Roger Boss", function(a)
 _G.AutoLV = a
  
+spawn(function()
+   while wait(3) do
+       if Methodnow == 1 then
+        Methodnow = 2
+        Method = CFrame.new(0,8,6)
+        else
+        Methodnow = 1
+        Method = CFrame.new(0,8,6)
+       end
+    end
+end)
     spawn(function()
        game:GetService("RunService").RenderStepped:Connect(function()
         pcall(function()
@@ -138,7 +175,7 @@ _G.AutoLV = a
 local players = game:GetService("Players")
 local plr = players.LocalPlayer
 local tween = game:GetService("TweenService")
-local CFrameEnd = game:GetService("Workspace")["Roger Boss"].HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local CFrameEnd = game:GetService("Workspace")["Roger Boss"].HumanoidRootPart.CFrame * Method
 local Time = 0.7
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
@@ -174,6 +211,17 @@ end)
 Preview:CreateToggle("Luffy Boss", function(a)
 _G.AutoLV = a
  
+spawn(function()
+   while wait(3) do
+       if Methodnow == 1 then
+        Methodnow = 2
+        Method = CFrame.new(0,8,6)
+        else
+        Methodnow = 1
+        Method = CFrame.new(0,8,6)
+       end
+    end
+end)
     spawn(function()
        game:GetService("RunService").RenderStepped:Connect(function()
         pcall(function()
@@ -182,7 +230,7 @@ _G.AutoLV = a
 local players = game:GetService("Players")
 local plr = players.LocalPlayer
 local tween = game:GetService("TweenService")
-local CFrameEnd = game:GetService("Workspace")["Monkey D Bacon"].HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local CFrameEnd = game:GetService("Workspace")["Monkey D Bacon"].HumanoidRootPart.CFrame * Method
 local Time = 0.7
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
@@ -218,6 +266,17 @@ end)
 Preview:CreateToggle("DungeonRed Boss", function(a)
 _G.AutoLV = a
  
+spawn(function()
+   while wait(3) do
+       if Methodnow == 1 then
+        Methodnow = 2
+        Method = CFrame.new(0,8,6)
+        else
+        Methodnow = 1
+        Method = CFrame.new(0,8,6)
+       end
+    end
+end)
     spawn(function()
        game:GetService("RunService").RenderStepped:Connect(function()
         pcall(function()
@@ -226,7 +285,7 @@ _G.AutoLV = a
 local players = game:GetService("Players")
 local plr = players.LocalPlayer
 local tween = game:GetService("TweenService")
-local CFrameEnd = game:GetService("Workspace")["Boss  dungeon Red"].HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local CFrameEnd = game:GetService("Workspace")["Boss  dungeon Red"].HumanoidRootPart.CFrame * Method
 local Time = 0.7
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
@@ -262,6 +321,17 @@ end)
 Preview:CreateToggle("DungeonBlue Boss", function(a)
 _G.AutoLV = a
  
+spawn(function()
+   while wait(3) do
+       if Methodnow == 1 then
+        Methodnow = 2
+        Method = CFrame.new(0,8,6)
+        else
+        Methodnow = 1
+        Method = CFrame.new(0,8,6)
+       end
+    end
+end)
     spawn(function()
        game:GetService("RunService").RenderStepped:Connect(function()
         pcall(function()
@@ -270,7 +340,7 @@ _G.AutoLV = a
 local players = game:GetService("Players")
 local plr = players.LocalPlayer
 local tween = game:GetService("TweenService")
-local CFrameEnd = game:GetService("Workspace")["Boss  dungeon Blue"].HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local CFrameEnd = game:GetService("Workspace")["Boss  dungeon Blue"].HumanoidRootPart.CFrame * Method
 local Time = 0.7
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
@@ -306,6 +376,17 @@ end)
 Preview:CreateToggle("HeroBrine Boss", function(a)
 _G.AutoLV = a
  
+spawn(function()
+   while wait(3) do
+       if Methodnow == 1 then
+        Methodnow = 2
+        Method = CFrame.new(0,8,6)
+        else
+        Methodnow = 1
+        Method = CFrame.new(0,8,6)
+       end
+    end
+end)
     spawn(function()
        game:GetService("RunService").RenderStepped:Connect(function()
         pcall(function()
@@ -314,7 +395,7 @@ _G.AutoLV = a
 local players = game:GetService("Players")
 local plr = players.LocalPlayer
 local tween = game:GetService("TweenService")
-local CFrameEnd = game:GetService("Workspace")["Hero Brine"].HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local CFrameEnd = game:GetService("Workspace")["Hero Brine"].HumanoidRootPart.CFrame * Method
 local Time = 0.7
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
@@ -350,6 +431,18 @@ end)
 Preview:CreateToggle("DragonPet Boss", function(a)
 _G.AutoLV = a
  
+
+spawn(function()
+   while wait(3) do
+       if Methodnow == 1 then
+        Methodnow = 2
+        Method = CFrame.new(0,8,6)
+        else
+        Methodnow = 1
+        Method = CFrame.new(0,8,6)
+       end
+    end
+end)
     spawn(function()
        game:GetService("RunService").RenderStepped:Connect(function()
         pcall(function()
@@ -358,7 +451,7 @@ _G.AutoLV = a
 local players = game:GetService("Players")
 local plr = players.LocalPlayer
 local tween = game:GetService("TweenService")
-local CFrameEnd = game:GetService("Workspace")["Bacon Dragon"].HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local CFrameEnd = game:GetService("Workspace")["Bacon Dragon"].HumanoidRootPart.CFrame * Method
 local Time = 0.7
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
@@ -394,6 +487,17 @@ end)
 Preview:CreateToggle("BaconBlack Boss", function(a)
 _G.AutoLV = a
  
+spawn(function()
+   while wait(3) do
+       if Methodnow == 1 then
+        Methodnow = 2
+        Method = CFrame.new(0,8,6)
+        else
+        Methodnow = 1
+        Method = CFrame.new(0,8,6)
+       end
+    end
+end)
     spawn(function()
        game:GetService("RunService").RenderStepped:Connect(function()
         pcall(function()
@@ -402,7 +506,7 @@ _G.AutoLV = a
 local players = game:GetService("Players")
 local plr = players.LocalPlayer
 local tween = game:GetService("TweenService")
-local CFrameEnd = game:GetService("Workspace").BaconBlack.HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local CFrameEnd = game:GetService("Workspace").BaconBlack.HumanoidRootPart.CFrame * Method
 local Time = 0.7
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
@@ -438,6 +542,17 @@ end)
 Preview:CreateToggle("Katakuri Boss", function(a)
 _G.AutoLV = a
  
+spawn(function()
+   while wait(3) do
+       if Methodnow == 1 then
+        Methodnow = 2
+        Method = CFrame.new(0,8,6)
+        else
+        Methodnow = 1
+        Method = CFrame.new(0,8,6)
+       end
+    end
+end)
     spawn(function()
        game:GetService("RunService").RenderStepped:Connect(function()
         pcall(function()
@@ -446,7 +561,7 @@ _G.AutoLV = a
 local players = game:GetService("Players")
 local plr = players.LocalPlayer
 local tween = game:GetService("TweenService")
-local CFrameEnd = game:GetService("Workspace").Katakuri.HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local CFrameEnd = game:GetService("Workspace").Katakuri.HumanoidRootPart.CFrame * Method
 local Time = 0.7
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
