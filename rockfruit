@@ -66,6 +66,9 @@ end)
 ---AutoFarm-----------------------------------------------------------------------------------------
 local Preview = Main:CreateSection("AutoFarm")
 Preview:CreateLabel("Boss")
+Preview:CreateLabel("If you want to choose a boss, re-game!")
+Preview:CreateLabel("If you want to choose a boss, re-game!")
+Preview:CreateLabel("If you want to choose a boss, re-game!")
 -------------------------------------------------
 Preview:CreateToggle("Shanks Boss", function(a)
 
