@@ -35,9 +35,10 @@ end)
 end
 end
 end)
----AutoFarm--
+---AutoFarm-----------------------------------------------------------------------------------------
 local Preview = Main:CreateSection("AutoFarm")
 Preview:CreateLabel("Boss")
+-------------------------------------------------
 Preview:CreateToggle("Shanks Boss", function(a)
 
 _G.AutoLV = a
@@ -50,8 +51,8 @@ _G.AutoLV = a
 local players = game:GetService("Players")
 local plr = players.LocalPlayer
 local tween = game:GetService("TweenService")
-local CFrameEnd = game:GetService("Workspace").Shanks.HumanoidRootPart.CFrame * CFrame.new(0,1,5)
-local Time = 0.8
+local CFrameEnd = game:GetService("Workspace").Shanks.HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local Time = 0.7
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait(E)
@@ -82,7 +83,7 @@ tween.Completed:Wait(E)
         end)
     end)
 end)
---
+---------------------------------------------------------------------------
 Preview:CreateToggle("Florentino Boss", function(a)
 _G.AutoLV = a
  
@@ -93,8 +94,8 @@ _G.AutoLV = a
 local players = game:GetService("Players")
 local plr = players.LocalPlayer
 local tween = game:GetService("TweenService")
-local CFrameEnd = game:GetService("Workspace")["florentino Boss"].HumanoidRootPart.CFrame * CFrame.new(0,1,5)
-local Time = 0.6
+local CFrameEnd = game:GetService("Workspace")["florentino Boss"].HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local Time = 0.7
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait(E)
@@ -124,4 +125,455 @@ tween.Completed:Wait(E)
             end
         end)
     end)
+end)
+--------------------------------------------------------------------------
+Preview:CreateToggle("Roger Boss", function(a)
+_G.AutoLV = a
+ 
+    spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+
+local players = game:GetService("Players")
+local plr = players.LocalPlayer
+local tween = game:GetService("TweenService")
+local CFrameEnd = game:GetService("Workspace")["Roger Boss"].HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local Time = 0.7
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait(E)
+            end
+        end)
+       end)
+    end)
+
+   spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+            end
+        end)
+       end)
+    end)
+
+
+    spawn(function()
+        game:GetService("RunService").Heartbeat:Connect(function()
+            if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") and _G.AutoLV then
+                setfflag("HumanoidParallelRemoveNoPhysics", "False")
+                setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+                game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+            end
+        end)
+    end)
+end)   
+---------------------------------------------------------------
+Preview:CreateToggle("Luffy Boss", function(a)
+_G.AutoLV = a
+ 
+    spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+
+local players = game:GetService("Players")
+local plr = players.LocalPlayer
+local tween = game:GetService("TweenService")
+local CFrameEnd = game:GetService("Workspace")["Monkey D Bacon"].HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local Time = 0.7
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait(E)
+            end
+        end)
+       end)
+    end)
+
+   spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+            end
+        end)
+       end)
+    end)
+
+
+    spawn(function()
+        game:GetService("RunService").Heartbeat:Connect(function()
+            if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") and _G.AutoLV then
+                setfflag("HumanoidParallelRemoveNoPhysics", "False")
+                setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+                game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+            end
+        end)
+    end)
+end)   
+-------------------------------------------------------
+Preview:CreateToggle("DungeonRed Boss", function(a)
+_G.AutoLV = a
+ 
+    spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+
+local players = game:GetService("Players")
+local plr = players.LocalPlayer
+local tween = game:GetService("TweenService")
+local CFrameEnd = game:GetService("Workspace")["Boss  dungeon Red"].HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local Time = 0.7
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait(E)
+            end
+        end)
+       end)
+    end)
+
+   spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+            end
+        end)
+       end)
+    end)
+
+
+    spawn(function()
+        game:GetService("RunService").Heartbeat:Connect(function()
+            if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") and _G.AutoLV then
+                setfflag("HumanoidParallelRemoveNoPhysics", "False")
+                setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+                game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+            end
+        end)
+    end)
+end)  
+-------------------------------------------------------------------
+Preview:CreateToggle("DungeonBlue Boss", function(a)
+_G.AutoLV = a
+ 
+    spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+
+local players = game:GetService("Players")
+local plr = players.LocalPlayer
+local tween = game:GetService("TweenService")
+local CFrameEnd = game:GetService("Workspace")["Boss  dungeon Blue"].HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local Time = 0.7
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait(E)
+            end
+        end)
+       end)
+    end)
+
+   spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+            end
+        end)
+       end)
+    end)
+
+
+    spawn(function()
+        game:GetService("RunService").Heartbeat:Connect(function()
+            if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") and _G.AutoLV then
+                setfflag("HumanoidParallelRemoveNoPhysics", "False")
+                setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+                game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+            end
+        end)
+    end)
+end)  
+-----------------------------------------------------
+Preview:CreateToggle("HeroBrine Boss", function(a)
+_G.AutoLV = a
+ 
+    spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+
+local players = game:GetService("Players")
+local plr = players.LocalPlayer
+local tween = game:GetService("TweenService")
+local CFrameEnd = game:GetService("Workspace")["Hero Brine"].HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local Time = 0.7
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait(E)
+            end
+        end)
+       end)
+    end)
+
+   spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+            end
+        end)
+       end)
+    end)
+
+
+    spawn(function()
+        game:GetService("RunService").Heartbeat:Connect(function()
+            if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") and _G.AutoLV then
+                setfflag("HumanoidParallelRemoveNoPhysics", "False")
+                setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+                game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+            end
+        end)
+    end)
+end)
+-------------------------------------------------------------------------
+Preview:CreateToggle("DragonPet Boss", function(a)
+_G.AutoLV = a
+ 
+    spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+
+local players = game:GetService("Players")
+local plr = players.LocalPlayer
+local tween = game:GetService("TweenService")
+local CFrameEnd = game:GetService("Workspace")["Bacon Dragon"].HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local Time = 0.7
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait(E)
+            end
+        end)
+       end)
+    end)
+
+   spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+            end
+        end)
+       end)
+    end)
+
+
+    spawn(function()
+        game:GetService("RunService").Heartbeat:Connect(function()
+            if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") and _G.AutoLV then
+                setfflag("HumanoidParallelRemoveNoPhysics", "False")
+                setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+                game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+            end
+        end)
+    end)
+end)  
+----------------------------------------------------------------
+Preview:CreateToggle("BaconBlack Boss", function(a)
+_G.AutoLV = a
+ 
+    spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+
+local players = game:GetService("Players")
+local plr = players.LocalPlayer
+local tween = game:GetService("TweenService")
+local CFrameEnd = game:GetService("Workspace").BaconBlack.HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local Time = 0.7
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait(E)
+            end
+        end)
+       end)
+    end)
+
+   spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+            end
+        end)
+       end)
+    end)
+
+
+    spawn(function()
+        game:GetService("RunService").Heartbeat:Connect(function()
+            if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") and _G.AutoLV then
+                setfflag("HumanoidParallelRemoveNoPhysics", "False")
+                setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+                game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+            end
+        end)
+    end)
+end)  
+----------------------------------------------------------------------
+Preview:CreateToggle("Katakuri Boss", function(a)
+_G.AutoLV = a
+ 
+    spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+
+local players = game:GetService("Players")
+local plr = players.LocalPlayer
+local tween = game:GetService("TweenService")
+local CFrameEnd = game:GetService("Workspace").Katakuri.HumanoidRootPart.CFrame * CFrame.new(0,1,6)
+local Time = 0.7
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait(E)
+            end
+        end)
+       end)
+    end)
+
+   spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+            end
+        end)
+       end)
+    end)
+
+
+    spawn(function()
+        game:GetService("RunService").Heartbeat:Connect(function()
+            if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") and _G.AutoLV then
+                setfflag("HumanoidParallelRemoveNoPhysics", "False")
+                setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+                game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+            end
+        end)
+    end)
+end) 
+-------------------------------------------------------------------
+local Preview = Main:CreateSection("Teleport")
+Preview:CreateButton("Click", "Start Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2032.28162, 494.964722, 1457.39246, -0.864138782, -3.71566222e-10, 0.503253579, 1.94690486e-08, 1, 3.41687105e-08, -0.503253579, 3.93243766e-08, -0.864138782)
+end)
+----
+Preview:CreateButton("Click", "RandomFruit Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2776.38818, 485.306305, 1945.53796, -0.957300127, -2.70420664e-08, -0.289095938, -1.45318388e-08, 1, -4.54199913e-08, 0.289095938, -3.92794703e-08, -0.957300127)
+end)
+----
+Preview:CreateButton("Click", "Tree Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2015.42932, 488.481628, 2320.6394, -0.99879241, -3.66617243e-08, -0.0491300225, -3.20645341e-08, 1, -9.43600398e-08, 0.0491300225, -9.267076e-08, -0.99879241)
+end)
+----
+Preview:CreateButton("Click", "Sand Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1277.22009, 486.574036, 1827.78345, -0.0469973534, -8.95341934e-09, -0.998894989, -3.83769061e-09, 1, -8.78276296e-09, 0.998894989, 3.42068351e-09, -0.0469973534)
+end)
+----
+Preview:CreateButton("Click", "Colosseum Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3337.88721, 489.837463, 1068.62048, 0.722381294, -2.94543554e-08, 0.691494942, 1.23662314e-09, 1, 4.1303327e-08, -0.691494942, -2.89816331e-08, 0.722381294)
+end)
+----
+Preview:CreateButton("Click", "Snow Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2556.89502, 500.409607, 235.189423, 0.700315297, -3.96178423e-09, 0.71383363, 3.50338603e-08, 1, -2.88203914e-08, -0.71383363, 4.51917117e-08, 0.700315297)
+end)
+----
+Preview:CreateButton("Click", "Roger Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5295.9585, 485.672729, 1549.67969, 0.710294008, 6.03736039e-09, 0.703905106, -1.66034297e-08, 1, 8.17717716e-09, -0.703905106, -1.74954398e-08, 0.710294008)
+end)
+----
+Preview:CreateButton("Click", "Dungeon Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4521.53125, 491.754761, 3308.49634, -0.965374947, -1.10413268e-07, 0.260866225, -9.47830188e-08, 1, 7.24973717e-08, -0.260866225, 4.52614586e-08, -0.965374947)
+end)
+----
+Preview:CreateButton("Click", "Candy Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5311.70459, 488.088501, 750.916748, -0.15335919, -5.55265274e-08, 0.988170505, -6.95346714e-08, 1, 4.53998048e-08, -0.988170505, -6.17496383e-08, -0.15335919)
+end)
+----
+Preview:CreateButton("Click", "Monk Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4077.54663, 599.914062, 1963.23608, -0.0864038467, 4.38335803e-08, 0.996260166, -9.0442775e-08, 1, -5.18420613e-08, -0.996260166, -9.45838892e-08, -0.0864038467)
+end)
+----
+Preview:CreateButton("Click", "Mushroom Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3188.03101, 486.691925, 3359.01685, 0.465956539, -4.63880596e-08, -0.884807587, -5.7689892e-08, 1, -8.28078797e-08, 0.884807587, 8.96293244e-08, 0.465956539)
+end)
+----
+Preview:CreateButton("Click", "MushroomBoss Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3225.73145, 891.163147, 3237.58252, 0.862746298, -1.93980316e-08, 0.50563705, -7.96117477e-11, 1, 3.84993868e-08, -0.50563705, -3.32554571e-08, 0.862746298)
+end)
+----
+Preview:CreateButton("Click", "TreeBoss Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2145.74756, 691.030579, 3589.83447, 0.329941422, 9.39605584e-08, -0.944001436, -9.70342384e-08, 1, 6.56195454e-08, 0.944001436, 6.99498486e-08, 0.329941422)
+end)
+----
+Preview:CreateButton("Click", "DragonPet Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(441.67923, 500.627625, 1326.86584, -0.517022073, -3.79253517e-09, -0.855972052, 4.47727322e-09, 1, -7.13502768e-09, 0.855972052, -7.52138796e-09, -0.517022073)
+end)
+----
+Preview:CreateButton("Click", "Minecraft Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(237.698898, 546.495605, 29.4696884, -0.13299492, -9.26070811e-08, 0.991116703, -3.71952247e-08, 1, 8.84460007e-08, -0.991116703, -2.51019401e-08, -0.13299492)
+end)
+----
+Preview:CreateButton("Click", "Marineford(Raid) Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-747.74823, 493.439392, -357.468323, 0.507413864, 9.17857079e-08, -0.861702502, -7.33536254e-08, 1, 6.33223962e-08, 0.861702502, 3.10783363e-08, 0.507413864)
+end)
+----
+Preview:CreateButton("Click", "Marineford(Boss) Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1539.78491, 494.87088, -1471.5376, 0.0252563711, -1.56540878e-08, -0.999680996, 1.98080219e-09, 1, -1.56090376e-08, 0.999680996, -1.58594271e-09, 0.0252563711)
+end)
+----
+Preview:CreateButton("Click", "RandomClans Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-192.967224, 527.474854, 125.985855, 0.896906137, -6.04270269e-08, -0.442220986, 5.55674404e-08, 1, -2.39433451e-08, 0.442220986, -3.09815507e-09, 0.896906137)
+end)
+----
+Preview:CreateButton("Click", "ScythRaiden Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5532.3584, 485.578735, 5120.6167, -0.495432109, -6.01520966e-08, 0.868646681, -5.73000989e-08, 1, 3.65669806e-08, -0.868646681, -3.16570841e-08, -0.495432109)
+end)
+----
+Preview:CreateButton("Click", "BlueOrb Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1155.62415, 487.888336, 3111.01685, 0.028614141, 1.42624303e-08, 0.999590516, 3.30116663e-08, 1, -1.521326e-08, -0.999590516, 3.34334658e-08, 0.028614141)
+end)
+----
+Preview:CreateButton("Click", "Factory Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-749.794739, 525.681274, 4772.05371, -0.324272752, -3.01846015e-08, 0.945963621, -4.43699903e-08, 1, 1.66989746e-08, -0.945963621, -3.6557374e-08, -0.324272752)
+end)
+----
+Preview:CreateButton("Click", "Afk Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3095.91748, 26440.3809, 3427.43066, 0.994334817, 2.66321827e-08, 0.106293365, -2.90350375e-08, 1, 2.10583746e-08, -0.106293365, -2.40253062e-08, 0.994334817)
+end)
+----
+Preview:CreateButton("Click", "Kokowa Island", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2126.71509, 1637.02332, 507.383575, -0.143551514, -4.60071767e-08, 0.989642859, 5.45341443e-08, 1, 5.43990559e-08, -0.989642859, 6.1778394e-08, -0.143551514)
+end)
+----------------------------------------------------Settings--------------------------------------------------
+local Preview = Main:CreateSection("Settings")
+
+Preview:CreateBind("Hide ui", Enum.KeyCode.RightControl, function()
+    print("Keybind Was Pressed")
 end)
