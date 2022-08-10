@@ -1,0 +1,127 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Fuzki-UI-Library/main/FuzkiLibrary.lua"))()
+local Main = Library:Create("REN HUB", "Rock Fruit")
+
+---Main---
+
+local Preview = Main:CreateSection("Main")
+Preview:CreateButton("Click", "Nocilp", function()
+
+nam = game.Players.LocalPlayer.Name
+game:GetService('RunService').Stepped:connect(function()
+for a, b in pairs(game.Workspace:GetChildren()) do
+if b.Name == nam then
+for i, v in pairs(game.Workspace[nam]:GetChildren()) do
+if v:IsA("BasePart") then
+v.CanCollide = false
+ 
+end
+end
+end
+end
+end)
+end)
+---
+Preview:CreateLabel("AutoEquip")
+Preview:CreateToggle("Auto Sickle Awken", function(a)
+AutoEquiped = a
+end)
+spawn(function()
+Weapon = "Sickle Awken"
+while wait() do
+if AutoEquiped then
+pcall(function()
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
+end)
+end
+end
+end)
+---AutoFarm--
+local Preview = Main:CreateSection("AutoFarm")
+Preview:CreateLabel("Boss")
+Preview:CreateToggle("Shanks Boss", function(a)
+
+_G.AutoLV = a
+ 
+    spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+
+local players = game:GetService("Players")
+local plr = players.LocalPlayer
+local tween = game:GetService("TweenService")
+local CFrameEnd = game:GetService("Workspace").Shanks.HumanoidRootPart.CFrame * CFrame.new(0,1,5)
+local Time = 0.8
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait(E)
+            end
+        end)
+       end)
+    end)
+
+   spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+            end
+        end)
+       end)
+    end)
+
+
+    spawn(function()
+        game:GetService("RunService").Heartbeat:Connect(function()
+            if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") and _G.AutoLV then
+                setfflag("HumanoidParallelRemoveNoPhysics", "False")
+                setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+                game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+            end
+        end)
+    end)
+end)
+--
+Preview:CreateToggle("Florentino Boss", function(a)
+_G.AutoLV = a
+ 
+    spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+local players = game:GetService("Players")
+local plr = players.LocalPlayer
+local tween = game:GetService("TweenService")
+local CFrameEnd = game:GetService("Workspace")["florentino Boss"].HumanoidRootPart.CFrame * CFrame.new(0,1,5)
+local Time = 0.6
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait(E)
+            end
+        end)
+       end)
+    end)
+
+   spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.AutoLV then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+            end
+        end)
+       end)
+    end)
+
+
+    spawn(function()
+        game:GetService("RunService").Heartbeat:Connect(function()
+            if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") and _G.AutoLV then
+                setfflag("HumanoidParallelRemoveNoPhysics", "False")
+                setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+                game:GetService("Players").LocalPlayer.Character.Humanoid:ChangeState(11)
+            end
+        end)
+    end)
+end)
