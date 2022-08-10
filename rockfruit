@@ -36,8 +36,8 @@ end
 end
 end)
 --------------
-Preview:CreateToggle("Auto Katana", function(a)
-AutoEquiped = a
+Preview:CreateToggle("Auto Katana", function(aa)
+AutoEquiped = aa
 end)
 spawn(function()
 Weapon = "Katana"
@@ -50,8 +50,8 @@ end
 end
 end)
 ---------------
-Preview:CreateToggle("Auto Saber", function(a)
-AutoEquiped = a
+Preview:CreateToggle("Auto Saber", function(aaa)
+AutoEquiped = aaa
 end)
 spawn(function()
 Weapon = "Saber"
@@ -131,16 +131,16 @@ end)
 Preview:CreateToggle("Florentino Boss", function(a)
 _G.AutoLV = a
 
-Method = CFrame.new(0,7,5)
+Method = CFrame.new(0,6,5)
 
 spawn(function()
    while wait(3) do
        if Methodnow == 1 then
         Methodnow = 2
-        Method = CFrame.new(0,7,5)
+        Method = CFrame.new(0,6,5)
         else
         Methodnow = 1
-        Method = CFrame.new(0,7,5)
+        Method = CFrame.new(0,6,5)
        end
     end
 end)
