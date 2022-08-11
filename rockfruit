@@ -20,6 +20,7 @@ end
 end
 end)
 end)
+
 ---
 Preview:CreateLabel("AutoEquip")
 Preview:CreateToggle("Auto Sickle Awken (Recommend) ", function(a)
@@ -35,6 +36,134 @@ end)
 end
 end
 end)
+-----
+local Weaponlist = {}
+local Weapon = nil
+
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+    table.insert(Weaponlist,v.Name)
+end
+
+Preview:CreateTextBox("Name Weapon --> ", "Search", function(currentOption)
+  Weapon = currentOption 
+end)
+
+Preview:CreateToggle("AutoEquip", function(e)
+AutoEquiped = e
+end)
+
+spawn(function()
+while wait() do
+if AutoEquiped then
+pcall(function()
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(Weapon))
+end)
+end
+end
+end)
+---------autosit--------------------------------------------------------------------------------------------
+local Preview = Main:CreateSection("AutoSit")
+Preview:CreateLabel("AutoSit Boss")
+
+Preview:CreateButton("Click", "Shanks", function()
+
+_G.loop = true
+while _G.loop do wait()
+
+game:GetService("Workspace").Shanks.Humanoid.Sit = true
+
+wait(1)
+end
+end)
+-----
+Preview:CreateButton("Click", "Florentino", function()
+
+_G.loop = true
+while _G.loop do wait()
+
+game:GetService("Workspace")["florentino Boss"].Humanoid.Sit = true
+
+wait(1)
+end
+end)
+-----
+Preview:CreateButton("Click", "Roger", function()
+
+_G.loop = true
+while _G.loop do wait()
+
+game:GetService("Workspace")["Roger Boss"].Humanoid.Sit = true
+
+wait(1)
+end
+end)
+-----
+Preview:CreateButton("Click", "Luffy", function()
+
+_G.loop = true
+while _G.loop do wait()
+
+game:GetService("Workspace")["Monkey D Bacon"].Humanoid.Sit = true
+
+wait(1)
+end
+end)
+-----
+Preview:CreateButton("Click", "DungeonRed", function()
+
+_G.loop = true
+while _G.loop do wait()
+
+game:GetService("Workspace")["Boss  dungeon Red"].Humanoid.Sit = true
+
+wait(1)
+end
+end)
+-----
+Preview:CreateButton("Click", "DungeonBlue", function()
+
+_G.loop = true
+while _G.loop do wait()
+
+game:GetService("Workspace")["Boss  dungeon Blue"].Humanoid.Sit = true
+
+wait(1)
+end
+end)
+-----
+Preview:CreateButton("Click", "HeroBrine", function()
+
+_G.loop = true
+while _G.loop do wait()
+
+game:GetService("Workspace")["Hero Brine"].Humanoid.Sit = true
+
+wait(1)
+end
+end)
+-----
+Preview:CreateButton("Click", "BaconBlack", function()
+
+_G.loop = true
+while _G.loop do wait()
+
+game:GetService("Workspace").BaconBlack.Humanoid.Sit = true
+
+wait(1)
+end
+end)
+-----
+Preview:CreateButton("Click", "Katakuri", function()
+
+_G.loop = true
+while _G.loop do wait()
+
+game:GetService("Workspace").Katakuri.Humanoid.Sit = true
+
+wait(1)
+end
+end)
+-----
 ---AutoFarm-----------------------------------------------------------------------------------------
 local Preview = Main:CreateSection("AutoFarm")
 Preview:CreateLabel("Boss")
@@ -46,16 +175,16 @@ Preview:CreateToggle("Shanks Boss", function(a)
 
 _G.AutoLV = a
  
-Method = CFrame.new(0,7,6)
+Method = CFrame.new(0,1,4)
  
 spawn(function()
    while wait(3) do
        if Methodnow == 1 then
         Methodnow = 2
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
         else
         Methodnow = 1
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
        end
     end
 end)
@@ -103,16 +232,16 @@ end)
 Preview:CreateToggle("Florentino Boss", function(a)
 _G.AutoLV = a
 
-Method = CFrame.new(0,7,6)
+Method = CFrame.new(0,1,4)
  
 spawn(function()
    while wait(3) do
        if Methodnow == 1 then
         Methodnow = 2
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
         else
         Methodnow = 1
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
        end
     end
 end)
@@ -161,16 +290,16 @@ end)
 Preview:CreateToggle("Roger Boss", function(a)
 _G.AutoLV = a
 
-Method = CFrame.new(0,7,6)
+Method = CFrame.new(0,1,4)
  
 spawn(function()
    while wait(3) do
        if Methodnow == 1 then
         Methodnow = 2
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
         else
         Methodnow = 1
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
        end
     end
 end)
@@ -218,16 +347,16 @@ end)
 Preview:CreateToggle("Luffy Boss", function(a)
 _G.AutoLV = a
 
-Method = CFrame.new(0,7,6)
+Method = CFrame.new(0,1,4)
  
 spawn(function()
    while wait(3) do
        if Methodnow == 1 then
         Methodnow = 2
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
         else
         Methodnow = 1
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
        end
     end
 end)
@@ -275,16 +404,16 @@ end)
 Preview:CreateToggle("DungeonRed Boss", function(a)
 _G.AutoLV = a
 
-Method = CFrame.new(0,7,6)
+Method = CFrame.new(0,1,4)
  
 spawn(function()
    while wait(3) do
        if Methodnow == 1 then
         Methodnow = 2
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
         else
         Methodnow = 1
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
        end
     end
 end)
@@ -332,16 +461,16 @@ end)
 Preview:CreateToggle("DungeonBlue Boss", function(a)
 _G.AutoLV = a
 
-Method = CFrame.new(0,7,6)
+Method = CFrame.new(0,1,4)
  
 spawn(function()
    while wait(3) do
        if Methodnow == 1 then
         Methodnow = 2
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
         else
         Methodnow = 1
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
        end
     end
 end)
@@ -389,16 +518,16 @@ end)
 Preview:CreateToggle("HeroBrine Boss", function(a)
 _G.AutoLV = a
 
-Method = CFrame.new(0,7,6)
+Method = CFrame.new(0,1,4)
  
 spawn(function()
    while wait(3) do
        if Methodnow == 1 then
         Methodnow = 2
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
         else
         Methodnow = 1
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
        end
     end
 end)
@@ -446,16 +575,16 @@ end)
 Preview:CreateToggle("DragonPet Boss", function(a)
 _G.AutoLV = a
 
-Method = CFrame.new(0,2,6)
+Method = CFrame.new(0,1,4)
  
 spawn(function()
    while wait(3) do
        if Methodnow == 1 then
         Methodnow = 2
-        Method = CFrame.new(0,2,6)
+        Method = CFrame.new(0,1,4)
         else
         Methodnow = 1
-        Method = CFrame.new(0,2,6)
+        Method = CFrame.new(0,1,4)
        end
     end
 end)
@@ -503,16 +632,16 @@ end)
 Preview:CreateToggle("BaconBlack Boss", function(a)
 _G.AutoLV = a
  
-Method = CFrame.new(0,7,6)
+Method = CFrame.new(0,1,4)
  
 spawn(function()
    while wait(3) do
        if Methodnow == 1 then
         Methodnow = 2
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
         else
         Methodnow = 1
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
        end
     end
 end)
@@ -560,16 +689,16 @@ end)
 Preview:CreateToggle("Katakuri Boss", function(a)
 _G.AutoLV = a
 
-Method = CFrame.new(0,7,6)
+Method = CFrame.new(0,1,4)
  
 spawn(function()
    while wait(3) do
        if Methodnow == 1 then
         Methodnow = 2
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
         else
         Methodnow = 1
-        Method = CFrame.new(0,7,6)
+        Method = CFrame.new(0,1,4)
        end
     end
 end)
