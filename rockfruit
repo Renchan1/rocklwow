@@ -175,8 +175,7 @@ end)
 -----
 Preview:CreateButton("Click", "Thanos", function()
 
-_G.loop = true
-while _G.loop do wait()
+while true do
 
 local plr = game.Players.LocalPlayer
 game:GetService("Workspace")["Thanos Boss"].Humanoid.Sit = true
