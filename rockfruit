@@ -173,7 +173,7 @@ wait(1)
 end
 end)
 -----
-Preview:CreateButton("Click", "Katakuri", function()
+Preview:CreateButton("Click", "Thanos", function()
 
 _G.loop = true
 while _G.loop do wait()
